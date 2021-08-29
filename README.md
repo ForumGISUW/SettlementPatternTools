@@ -6,38 +6,28 @@ This set of tools was used in PhD thesis to be used directly in ArcGIS 10.3.1 ve
 
 
 
-How to install
+## How to install
 
 
 
-If you have issues ising it.....
+### If you have issues using it on new versions of ArcGIS
 
 
 
 
-Error 1
-
-"Failed to initialize R interpreter"
+#### Error 1 "Failed to initialize R interpreter"
 
 
-In the script I have included nessary code to install all the packages, but somehow I could not figure it out why it does not start. I 
+In the script I have included nessary code to install all the packages, but somehow I could not figure it out why it does not start AT aRCgis 10.7.1, when it was working perfectly under ArcGIS 10.3.1. I found similar issues on the [web](https://github.com/R-ArcGIS/r-bridge-install/issues/73). Unfortunately there no proper solution to that. Perphaps the issues is the fact, that package is not ready for new versions of R. There is a temporary solution to that:
 
-found similar issues on the [web](https://github.com/R-ArcGIS/r-bridge-install/issues/73). Unfortunately there no proper solution to 
-
-that. Perphaps the issues is the fact, that package is not ready for new versions of R
-
-Install and older version of R (3.6.3) then
+##### Install and older version of R (3.6.3) 
 
 	https://cran.r-project.org/bin/windows/base/old/3.6.3/
 
-"Failed to initialize R interpreter" is solved, but there are new issues occuring. Basically you can not install any of the packages on 
-
-the go.
+"Failed to initialize R interpreter" is solved, but there are new issues occuring. Basically you can not install any of the packages on the go.
 
 
-Error 2
-
-"there is no package called ‘sp’"
+#### Error 2 "there is no package called ‘sp’"
 
 
 In the script I have included nessary code to install all the packages, but somehow it is not possible to install them using typical 
