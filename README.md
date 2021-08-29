@@ -14,7 +14,7 @@ According to the Hopkins-Skellam test of Complete Spatial Randomness the quotien
 
 It must then be calculated and compared to the value of x to the beta distribution with parameters (n, n). The value of x may be calculated by the formula: 
 
-![alt text(https://bit.ly/3DsAjjD)
+![alt text](https://bit.ly/3DsAjjD)
 
 [Hopkins, B., & Skellam, J. G., 1954.](https://www.jstor.org/stable/42907238 ) A New Method for determining the Type of Distribution of Plant Individuals. Annals of Botany, 18(70), 213–227.
 
