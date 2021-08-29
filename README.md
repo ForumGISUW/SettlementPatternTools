@@ -1,4 +1,4 @@
-# Settlement Pattern Tools 
+# ArcGIS ready tools for nearest neighbor analysis in archaeology: Clark & Evans 1954 // Hopkins & Skellam 1954 test
 
 This set of tools was used in PhD thesis to be used directly in ArcGIS 10.3.1 version.
 
