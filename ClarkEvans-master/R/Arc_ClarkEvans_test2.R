@@ -25,7 +25,7 @@ tool_exec <- function(in_params, out_params)
   require(arcgisbinding)
   arc.check_product()
   
-  print("Libraries: OK")
+  #print("Libraries: OK")
   
   ##Declaring the inputs and Output
   input_feature = in_params[[1]]
@@ -33,21 +33,21 @@ tool_exec <- function(in_params, out_params)
   MC = in_params[[3]]
   correct = in_params[[4]]
   output_feature1 = out_params[[1]]
-  print("The input and output params: OK")
+  #print("The input and output params: OK")
 
 
   ## Open the data and convert to appropreate format
 
   Data1 = arc.open(input_feature)
-  print("Data: Step 1: OK")
+  #print("Data: Step 1: OK")
   Data1a = arc.select(Data1)
-  print("Data: Step 1a: OK")
+  #print("Data: Step 1a: OK")
   Data2a = arc.data2sp(Data1a)
-  print("Data: Step 2a: OK")
+  #print("Data: Step 2a: OK")
   Data2 = as.ppp(Data2a)
-  print("Data: Step 2: OK")
+  #print("Data: Step 2: OK")
   Boxing <- convexhull(Data2)
-  print("Convexhull: OK")
+  #print("Convexhull: OK")
   
   arc.progress_label("Loading Dataset")
   
