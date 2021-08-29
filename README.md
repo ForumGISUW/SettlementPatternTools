@@ -6,5 +6,5 @@ This set of tools was used in PhD thesis to be used directly in ArcGIS 10.3.1 ve
 
 
 
-[![DOI](https://zenodo.org/badge/400855458.svg)](https://zenodo.org/badge/latestdoi/400855458)
+
 
