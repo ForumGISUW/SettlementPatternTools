@@ -31,12 +31,12 @@ tool_exec <- function(in_params, out_params)
   require(arcgisbinding)
   arc.check_product()
   
-  print("Libraries: OK")
+  #print("Libraries: OK")
   
   ##Declaring the inputs and Output
   input_feature = in_params[[1]]
   output_feature1 = out_params[[1]]
-  print("The input and output params: OK")
+  #print("The input and output params: OK")
   
   Data1 = arc.open(input_feature)
   #print("Data: Step 1: OK")
@@ -48,17 +48,16 @@ tool_exec <- function(in_params, out_params)
   #print("Data: Step 1: OK")
   
   arc.progress_label("Loading Dataset")
-  print("Running interations of Hopkins and Skellam 1954 test")
+  print("Running 999 interations of Hopkins and Skellam 1954 test")
   ## Performing Hopkins and Skellam 1954 test
   for(i in 1:999) {
     out[i] <- hopskel(Data2)
-    print(out[i])
+    #print(out[i])
   }
   out_params <- mean(out)
   out2 <- sd(out)
-  #print("Running interations of Hopkins and Skellam 1954 test")
-  #print(out_params)
-  print("Standard deviation of 999 interations of Hopkins and Skellam 1954 test:")
+  print(paste("Mean of 999 iterations:",out_params))
+  print(paste("Stantard deviation of 999 iterations:",out2))
+  print(out_params)
   print(out2)
-  return(out_params)
 }
