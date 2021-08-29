@@ -8,9 +8,13 @@ This set of tools was used in PhD thesis to be used directly in ArcGIS 10.3.1 ve
 
 ## How to install
 
+- Get [ArcGIS](https://www.arcgis.com/index.html) 
+- Install [R](https://cran.r-project.org/)
+- Follow instructions [here](https://github.com/R-ArcGIS/r-bridge-install) to install R-ArcGIS Bridge
 
 
-### If you have issues using it on new versions of ArcGIS
+
+## If you have issues using it on the new versions of ArcGIS Desktop
 
 
 
@@ -18,57 +22,66 @@ This set of tools was used in PhD thesis to be used directly in ArcGIS 10.3.1 ve
 #### Error 1 "Failed to initialize R interpreter"
 
 
-In the script I have included nessary code to install all the packages, but somehow I could not figure it out why it does not start AT aRCgis 10.7.1, when it was working perfectly under ArcGIS 10.3.1. I found similar issues on the [web](https://github.com/R-ArcGIS/r-bridge-install/issues/73). Unfortunately there no proper solution to that. Perphaps the issues is the fact, that package is not ready for new versions of R. There is a temporary solution to that:
+In the script I have included all nessary code to install all the packages, but somehow I could not figure it out why it does not start at ArcGIS 10.7.1, when it was working perfectly under ArcGIS 10.3.1. I found similar issues on the [web](https://github.com/R-ArcGIS/r-bridge-install/issues/73). Unfortunately there no proper solution to that. Perphaps the issues is the fact, that package is not ready for new versions of R. There is a temporary solution to that:
 
-##### Install and older version of R (3.6.3) 
+##### Install an older version of R (3.6.3) 
 
 	https://cran.r-project.org/bin/windows/base/old/3.6.3/
 
-"Failed to initialize R interpreter" is solved, but there are new issues occuring. Basically you can not install any of the packages on the go.
+"Failed to initialize R interpreter" is solved, but there are new issues occuring. Basically you can not install any of the packages on the go using for example   ````if (!requireNamespace("sp", quietly = True))
+    install.packages("sp")````
 
 
 #### Error 2 "there is no package called ‘sp’"
 
 
-In the script I have included nessary code to install all the packages, but somehow it is not possible to install them using typical 
-
-commands. The R says that you may need Rtools and you do not have one.
-
+It is not possible to install packages, because you are using an old version of R (3.6.3). The R says that you may need Rtools and you do not have one.
 
 - Install Rtools for R 3.6.3
 
-https://cran.r-project.org/bin/windows/Rtools/history.html
-	https://cran.r-project.org/bin/windows/Rtools/Rtools35.exe
+https://cran.r-project.org/bin/windows/Rtools/Rtools35.exe
+
+[Other versions here](https://cran.r-project.org/bin/windows/Rtools/history.html)
 
 
+Installing Rtools of course does not solve the issue, but it is nessary to compile older versions of the packages.
 
-IStalling Rtools does not solve the issue, but it is nessary to compile older versions of the packages.
-
-3. Install packages manually using RGui
+#### Install packages manually using RGui
 
 - Install Sp
-	install.packages("sp")
-
+```` 
+install.packages("sp")
+````
 - Install Spdep
-	install.packages("spdep")
-All the version will be younger, so R will ask you do you want to compile it. Say yes. It will take some time... finally when you will 
+```` 
+install.packages("spdep")
+```` 
+All the version of spdep will be younger, so R will ask you do you want to compile it. Say yes. It will take some time... finally when you will write ````require("spdep")```` it will load "sp", "spdata" and "spdep". 
 
-write "require("spdep")" it will load "sp", "spdata" and "spdep"
+- Install maptools
 
-- install maptools
-	install.packages("maptools")
+All the versions will be younger, so do the same as with Spdep, with all the following packages
 
-- there is also another thing linked with maptools called rgeos and gpclib
+```` 	
+install.packages("maptools")
+```` 
 
-- install rgeos
-	install.packages("rgeos")
-- install gpclib
-	install.packages("gpclib")
+- Install spatstat
 
-- install spatstat
-	install.packages("spatstat")
-All the version will be younger, so do the same as with Spdep
+```` 
+install.packages("spatstat")
+```` 
+- there is also another thing linked with maptools called rgeos and gpclib that somehow related to maptools and cause issues
 
-Finally works :)
+	
+```` 
+install.packages("rgeos")
+
+install.packages("gpclib")
+```` 
+
+
+
+### Finally works :)
 
 
