@@ -10,11 +10,11 @@ The tools uses [Spatstat](https://cran.r-project.org/web/packages/spatstat/index
 
 According to the Hopkins-Skellam test of Complete Spatial Randomness the quotient of the sum of the distances between points and their nearest neighbors (I) and random points and their nearest neighbors (P) will be 1 if these points are also arranged in a random way. The measure that indicates the distribution of points is the index A, which can be expressed as follows: 
 
-![img](https://bit.ly/2Wzlnzy)
+![alt text](https://bit.ly/2Wzlnzy)
 
 It must then be calculated and compared to the value of x to the beta distribution with parameters (n, n). The value of x may be calculated by the formula: 
 
-![img](https://bit.ly/3DsAjjD)
+![alt text(https://bit.ly/3DsAjjD)
 
 [Hopkins, B., & Skellam, J. G., 1954.](https://www.jstor.org/stable/42907238 ) A New Method for determining the Type of Distribution of Plant Individuals. Annals of Botany, 18(70), 213–227.
 
