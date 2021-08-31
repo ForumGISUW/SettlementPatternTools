@@ -6,9 +6,27 @@ The tools uses [Spatstat](https://cran.r-project.org/web/packages/spatstat/index
 
 ## Clark & Evans 1954 test 
 
+Ph. J. Clark and F. Evans have suggested a measure *R* that enable to compare the point pattern distribution to a regular hexagon, which could be a usefull tool for  studies on [Central Place Theory](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/central-place-theory) in archaeology. The formula for the ratio (R) proposed by Clarke and Evans can be calculated as follows. 
+
+Density (*p*) is the ratio of the number of points (*N*) and the area (*A*) occupied by them: 
+
+![\Large p = \frac{N }{A}](https://latex.codecogs.com/svg.image?p&space;=&space;\frac{N&space;}{A}) 
+
+In that case, the average distance ![\Large \bar{r}_{A}](https://latex.codecogs.com/svg.image?\bar{r}_{A}) is the ratio of the sum of the distances between each point in the data set and its nearest neighbor and the number of points: 
+
+![\Large \bar{r}_{A}=\frac{\sum r}{N}](https://latex.codecogs.com/svg.image?\bar{r}_{A}=\frac{\sum&space;r}{N})
+
+  where *r* is the distance between the point and its closest neighbor. 
+  
+The average distance between the points and their closest neighbors, provided that the points are distributed randomly ![\Large \bar{r}_{E}](https://latex.codecogs.com/svg.image?\bar{r}_{E}), can be expressed as follows: 
+
+![\Large \bar{r}_{A}=\frac{1}{2\sqrt{p}}](https://latex.codecogs.com/svg.image?\bar{r}_{A}=\frac{1}{2\sqrt{p}})
+
+*... to be continued*
+
 ## Hopkins & Skellam 1954 test 
 
-According to the Hopkins-Skellam test of Complete Spatial Randomness the quotient of the sum of the distances between points and their nearest neighbors (I) and random points and their nearest neighbors (P) will be 1 if these points are also arranged in a random way. The measure that indicates the distribution of points is the index A, which can be expressed as follows:
+According to the Hopkins-Skellam test of Complete Spatial Randomness the ratio of the sum of the distances between points and their nearest neighbors (I) and random points and their nearest neighbors (P) will be 1 if these points are also arranged in a random way. The measure that indicates the distribution of points is the index A, which can be expressed as follows:
 
 ![\Large A = \frac{\sum p^{2}}{\sum I^{2}}](https://latex.codecogs.com/svg.image?A&space;=&space;\frac{\sum&space;p^{2}}{\sum&space;I^{2}}) 
 
