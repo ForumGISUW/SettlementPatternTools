@@ -20,7 +20,11 @@ In that case, the average distance ![\Large \bar{r}_{A}](https://latex.codecogs.
   
 The average distance between the points and their closest neighbors, provided that the points are distributed randomly ![\Large \bar{r}_{E}](https://latex.codecogs.com/svg.image?\bar{r}_{E}), can be expressed as follows: 
 
-![\Large \bar{r}_{A}=\frac{1}{2\sqrt{p}}](https://latex.codecogs.com/svg.image?\bar{r}_{A}=\frac{1}{2\sqrt{p}})
+![\Large \bar{r}_{E}=\frac{1}{2\sqrt{p}}](https://latex.codecogs.com/svg.image?\bar{r}_{E}=\frac{1}{2\sqrt{p}})
+
+Then you can use the ratio of the average distance between the analyzed points and the closest neighbors and the average distance in the random distribution as an indicator showing the difference from the random distribution. 
+
+![R=\frac{\bar{r}_{A}}{\bar{r}_{E}}](https://latex.codecogs.com/svg.image?R=\frac{\bar{r}_{A}}{\bar{r}_{E}})
 
 *... to be continued*
 
