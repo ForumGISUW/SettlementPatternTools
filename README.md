@@ -26,7 +26,9 @@ Then you can use the ratio of the average distance between the analyzed points a
 
 ![R=\frac{\bar{r}_{A}}{\bar{r}_{E}}](https://latex.codecogs.com/svg.image?R=\frac{\bar{r}_{A}}{\bar{r}_{E}})
 
-*... to be continued*
+The R index for a distribution where all points will occupy the same place will be 0, and in the case of a random distribution 1, because the observed average distances will be the same as expected. For a regular arrangement in the form of a hexagon (a regular hexagon is the basis of a perfect tassellation), R will be 2.1491 
+
+[Clark, Ph. J., & Evans F. C., 1954.](https://doi.org/10.2307/1931034) “Distance to Nearest Neighbor as a Measure of Spatial Relationships in Populations.” Ecology 35 (4): 445–53.
 
 ## Hopkins & Skellam 1954 test 
 
