@@ -1,8 +1,7 @@
 # ArcGIS ready tools for nearest neighbor analysis in archaeology: Clark & Evans 1954 // Hopkins & Skellam 1954 test
 
-This set of tools was used in PhD thesis [(Buławka, N., 2020)](https://www.researchgate.net/publication/345728606_Bulawka_Nazarij_2020_Osadnictwo_Kultury_Jaz_w_Oazach_Tedzenu_i_Murgabu_w_Turkmenistanie_The_Settlement_of_Yaz_Culture_in_the_Oases_of_Tedjen_and_Murghab_in_Turkmenistan_Rozprawa_Doktorska_Warsaw_Unive)  to be used directly in ArcGIS 10.3.1 version.
+Since Walter Christaller's work on the central places in Germany, scholars have wondered about the properties and distribution of cities worldwide. That led to the creation of a significant scientific direction [Central Place Theory](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/central-place-theory) impacting various disciplines, such as geography, economics, archaeology, and many others. The studies suggested sites have to be arranged regularly in a way that reminds a hexagon shape. 
 
-The tools uses [Spatstat](https://cran.r-project.org/web/packages/spatstat/index.html) R library 
 
 ## Clark & Evans 1954 test 
 
@@ -44,6 +43,11 @@ It must then be calculated and compared to the value of x to the beta distributi
 
 ##  
 
+
+This set of tools was used in PhD thesis [(Buławka, N., 2020)](https://www.researchgate.net/publication/345728606_Bulawka_Nazarij_2020_Osadnictwo_Kultury_Jaz_w_Oazach_Tedzenu_i_Murgabu_w_Turkmenistanie_The_Settlement_of_Yaz_Culture_in_the_Oases_of_Tedjen_and_Murghab_in_Turkmenistan_Rozprawa_Doktorska_Warsaw_Unive)  to be used directly in ArcGIS 10.3.1 version.
+
+The tools uses [Spatstat](https://cran.r-project.org/web/packages/spatstat/index.html) R library 
+###
 [Buławka, N., 2020.](https://www.researchgate.net/publication/345728606_Bulawka_Nazarij_2020_Osadnictwo_Kultury_Jaz_w_Oazach_Tedzenu_i_Murgabu_w_Turkmenistanie_The_Settlement_of_Yaz_Culture_in_the_Oases_of_Tedjen_and_Murghab_in_Turkmenistan_Rozprawa_Doktorska_Warsaw_Unive) Osadnictwo kultury Jaz w oazach Tedżenu i Murgabu w Turkmenistanie [The settlement of Yaz culture in the oases of Tedjen and Murghab in Turkmenistan]. Rozprawa doktorska. University of Warsaw, Warszawa.
 
 
