@@ -1,0 +1,9 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Nazarij
+    given-names: Buławka
+    orcid: https://orcid.org/0000-0003-2338-4687
+title: ForumGISUW/SettlementPatternTools: ArcGIS ready tools for nearest neighbor analysis in archaeology: Clark & Evans 1954 // Hopkins & Skellam 1954 test
+version: 1.01
+date-released: 2021-09-30
