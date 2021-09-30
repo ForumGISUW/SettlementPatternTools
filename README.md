@@ -1,6 +1,6 @@
 # ArcGIS ready tools for nearest neighbor analysis in archaeology: Clark & Evans 1954 // Hopkins & Skellam 1954 test
 
-Since Walter Christaller's work on the central places in Germany, scholars have wondered about the properties and distribution of cities worldwide. That led to the creation of a significant scientific direction [Central Place Theory](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/central-place-theory) impacting various disciplines, such as geography, economics, archaeology, and many others. The studies suggested sites have to be arranged regularly in a way that reminds a hexagon shape. 
+Since [Walter Christaller's](https://www.worldcat.org/title/central-places-in-southern-germany/oclc/635646611&referer=brief_results) work on the central places in Germany, scholars have wondered about the properties and distribution of cities worldwide. That led to the creation of a significant scientific direction [Central Place Theory](https://www.sciencedirect.com/topics/earth-and-planetary-sciences/central-place-theory) impacting various disciplines, such as geography, economics, archaeology, and many others. The studies suggested sites have to be arranged regularly in a way that reminds a hexagon shape. 
 
 
 ## Clark & Evans 1954 test 
