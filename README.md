@@ -29,6 +29,14 @@ Then you can use the ratio of the average distance between the analyzed points a
 
 The R index for a distribution where all points will occupy the same place will be 0, and in the case of a random distribution 1, because the observed average distances will be the same as expected. For a regular arrangement in the form of a hexagon (a regular hexagon is the basis of a perfect tessellation), R will be 2.1491 
 
+*R* variable can be be calculated in R programing language (Spatstat library) using this toolset in the following way:
+
+`clarkevans(data)`
+
+`clarkevans.test(data, correction="correction_type", alternative="hypothesis")`
+
+Point distribution can be attested against random, clustered or regular distribution (`regular`, `clustered`, `two.sided`, `greater`, or `less`). There are three varieties of corrections: `none`, `Donnely`, `guard`, `cdf`.
+
 
 ## Hopkins & Skellam 1954 test 
 
@@ -40,6 +48,8 @@ It must then be calculated and compared to the value of x to the beta distributi
 
 ![\Large x = \frac{A}{1 + A}](https://latex.codecogs.com/svg.image?x&space;=&space;\frac{A}{1&space;&plus;&space;A}) 
 
+*A* variable can be be calculated in R programing language using this toolset (Spatstat library) in the following [way](https://www.rdocumentation.org/packages/spatstat.core/versions/2.1-2/topics/hopskel):
+`hopskel(data)`
 
 ##  
 
@@ -50,14 +60,17 @@ The tools uses [Spatstat](https://cran.r-project.org/web/packages/spatstat/index
 ###
 [Baddeley, A., Turner, R., & Rubak, E. 2018](https://cran.r-project.org/web/packages/spatstat/spatstat.pdf). Package ‘spatstat’: June 15, 2018 (No. 1.56–0). Retrieved from https://cran.r-project.org/web/packages/spatstat/spatstat.pdf
 
-[Baddeley, A., Turner, R., & Rubak, E. 2021](https://cran.r-project.org/web/packages/spatstat/spatstat.pdf). Package ‘spatstat’: September 30, 2021 (No. 2.2-0). Retrieved from https://cran.r-project.org/web/packages/spatstat/spatstat.pdf
+[Baddeley, A., Turner, R., & Rubak, E. 2021](https://cran.r-project.org/web/packages/spatstat/spatstat.pdf). Package ‘spatstat’: June 23, 2021 (No. 2.2-0). Retrieved from https://cran.r-project.org/web/packages/spatstat/spatstat.pdf
 
 
 [Buławka, N., 2020.](https://www.researchgate.net/publication/345728606_Bulawka_Nazarij_2020_Osadnictwo_Kultury_Jaz_w_Oazach_Tedzenu_i_Murgabu_w_Turkmenistanie_The_Settlement_of_Yaz_Culture_in_the_Oases_of_Tedjen_and_Murghab_in_Turkmenistan_Rozprawa_Doktorska_Warsaw_Unive) Osadnictwo kultury Jaz w oazach Tedżenu i Murgabu w Turkmenistanie [The settlement of Yaz culture in the oases of Tedjen and Murghab in Turkmenistan]. Rozprawa doktorska. University of Warsaw, Warszawa.
 
 [Clark, Ph. J., & Evans F. C., 1954.](https://doi.org/10.2307/1931034) “Distance to Nearest Neighbor as a Measure of Spatial Relationships in Populations.” Ecology 35 (4): 445–53.
 
+Donnelly, K.P. 1978. "Simulations to Determine the Variance and Edge Effect of Total Nearest Neighbour Distance", in I. Hodder (ed.), Simulation Studies in Archaeology, Cambridge University Press, Cambridge/New York, pp. 91–95.
+
 [Hopkins, B., & Skellam, J. G., 1954.](https://www.jstor.org/stable/42907238 ) A New Method for determining the Type of Distribution of Plant Individuals. Annals of Botany, 18(70), 213–227.
 
+[Rubak, B., and T. Chapman, 2015.](https://www.routledge.com/Spatial-Point-Patterns-Methodology-and-Applications-with-R/Baddeley-Rubak-Turner/p/book/9781482210200) Spatial Point Patterns: Methodology and Applications with R, Hall/CRC Press.
 
 
